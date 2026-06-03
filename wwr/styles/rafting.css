@@ -3,8 +3,8 @@
     --secondary-color: #f4d35e;
     --accent1-color: #11758a;
     --accent2-color: #f7f7f2;
-    --heading-font: "Bree Serif", Georgia, serif;
-    --body-font: "Open Sans", Arial, sans-serif;
+    --heading-font: Georgia, "Times New Roman", serif;
+    --body-font: "Trebuchet MS", Verdana, sans-serif;
     --text-dark: #1f2933;
     --surface-color: #ffffff;
 }
