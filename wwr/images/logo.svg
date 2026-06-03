@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-labelledby="title">
+  <title>Summit Surge Rafting logo</title>
+  <rect width="120" height="120" rx="24" fill="#f7f7f2"/>
+  <path d="M15 74c15-12 31-18 48-18s29 4 42 12v22H15Z" fill="#11758a"/>
+  <path d="M12 83c13-8 29-12 48-12 16 0 33 3 48 10" fill="none" stroke="#0d3b66" stroke-width="6" stroke-linecap="round"/>
+  <path d="M43 39 60 19l17 20H43Z" fill="#f4d35e"/>
+  <path d="M35 47h50" stroke="#0d3b66" stroke-width="8" stroke-linecap="round"/>
+  <path d="M32 60c9-6 18-9 28-9s21 3 30 9" fill="none" stroke="#0d3b66" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="47" cy="58" r="4" fill="#f7f7f2"/>
+  <circle cx="60" cy="54" r="4" fill="#f7f7f2"/>
+  <circle cx="73" cy="58" r="4" fill="#f7f7f2"/>
+</svg>
