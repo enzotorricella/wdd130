@@ -24,7 +24,7 @@ nav {
 }
 
 nav a {
-    display: inline-block;
+    display: block;
     padding: 0.5rem 1rem;
     color: #fff;
     text-decoration: none;
@@ -36,6 +36,7 @@ nav a:focus-visible {
 }
 
 main {
+    max-width: 840px;
     padding: 1rem;
 }
 
