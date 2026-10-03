@@ -261,7 +261,14 @@ footer p {
 
 .employees { padding: 1rem 2rem 2.5rem; }
 .employees > h2 { text-align: center; }
-.employee-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
+.employee-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 320px));
+    justify-content: center;
+    gap: 1.5rem;
+    max-width: 1050px;
+    margin: 0 auto;
+}
 .employee-grid figure { overflow: hidden; background: #eff8fb; border: 1px solid #d0e5eb; border-radius: 0.75rem; }
 .employee-grid img { display: block; width: 100%; aspect-ratio: 1 / 1; object-fit: cover; }
 .employee-one { object-position: left center; }
