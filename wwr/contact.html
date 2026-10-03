@@ -6,12 +6,13 @@
     <meta name="description" content="Contact Summit Surge Rafting to start planning your next whitewater adventure.">
     <meta name="author" content="Enzo Torricella">
     <title>Summit Surge Rafting | Contact Us</title>
+    <link rel="icon" href="images/logo.svg" type="image/svg+xml">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 <body>
     <header>
         <img src="images/logo.svg" alt="Summit Surge Rafting logo">
-        <nav>
+        <nav aria-label="Primary navigation">
             <ul class="navigation">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
@@ -20,15 +21,77 @@
             </ul>
         </nav>
     </header>
-    <main class="placeholder-page">
-        <section>
-            <h1>Contact Us</h1>
-            <p>Our contact information and inquiry form are coming soon. In the meantime, learn more <a href="about.html">about Summit Surge Rafting</a>.</p>
+    <main class="contact-page">
+        <section class="contact-intro">
+            <p class="contact-kicker">PLAN YOUR RIVER DAY</p>
+            <h1>Contact Summit Surge</h1>
+            <p>Questions about a trip, group booking, or what to bring? Our river team is ready to help you choose the right adventure.</p>
+        </section>
+
+        <section class="contact-details" aria-labelledby="contact-details-title">
+            <div class="company-details">
+                <h2 id="contact-details-title">Talk with our team</h2>
+                <address>
+                    <strong>Summit Surge Rafting</strong><br>
+                    Av. Eudoro Carrasco 3100<br>
+                    Rosario, Santa Fe, Argentina<br>
+                    <a href="tel:+543414550190">+54&nbsp;341&nbsp;455&#8209;0190</a><br>
+                    <a href="mailto:hello@summitsurgerafting.example">hello@summitsurgerafting.example</a>
+                </address>
+                <p>Office hours: Monday–Saturday, 9:00 a.m.–6:00 p.m.</p>
+            </div>
+            <iframe class="contact-map" title="Map showing Summit Surge Rafting in Rosario" src="https://www.google.com/maps?q=Av.%20Eudoro%20Carrasco%203100%2C%20Rosario%2C%20Argentina&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+        <section class="employees" aria-labelledby="employees-title">
+            <h2 id="employees-title">Meet the people behind your trip</h2>
+            <div class="employee-grid">
+                <figure>
+                    <img class="employee-one" src="images/rafting-team.webp" alt="Lucía Fernández, lead river guide" width="400" height="400">
+                    <figcaption><strong>Lucía Fernández</strong><span>Lead River Guide</span></figcaption>
+                </figure>
+                <figure>
+                    <img class="employee-two" src="images/rafting-team.webp" alt="Mateo Silva, operations manager" width="400" height="400">
+                    <figcaption><strong>Mateo Silva</strong><span>Operations Manager</span></figcaption>
+                </figure>
+                <figure>
+                    <img class="employee-three" src="images/rafting-team.webp" alt="Sofía Ríos, guest services coordinator" width="400" height="400">
+                    <figcaption><strong>Sofía Ríos</strong><span>Guest Services Coordinator</span></figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="inquiry" aria-labelledby="inquiry-title">
+            <div class="inquiry-heading">
+                <p class="contact-kicker">SEND A MESSAGE</p>
+                <h2 id="inquiry-title">How can we help?</h2>
+                <p>Complete the form and our team will respond as soon as possible.</p>
+            </div>
+            <form action="#" method="post">
+                <label for="fullname">Full name</label>
+                <input type="text" id="fullname" name="fullname" autocomplete="name" required>
+
+                <label for="email">Email address</label>
+                <input type="email" id="email" name="email" autocomplete="email" required>
+
+                <fieldset>
+                    <legend>Purpose of your message</legend>
+                    <label><input type="radio" name="purpose" value="general" required> General Inquiry</label>
+                    <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
+                    <label><input type="radio" name="purpose" value="website"> Website Suggestion</label>
+                </fieldset>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+
+                <label class="newsletter"><input type="checkbox" name="newsletter" value="yes"> Please subscribe me to the monthly newsletter</label>
+                <button type="submit">Send My Message</button>
+            </form>
         </section>
     </main>
     <footer>
         <p>&copy;2026 Summit Surge Rafting | Enzo Torricella</p>
-        <nav class="socialmedia">
+        <nav class="socialmedia" aria-label="Social media">
             <a href="https://facebook.com" aria-label="Facebook"><img src="images/facebook.svg" alt="Facebook icon"></a>
             <a href="https://instagram.com" aria-label="Instagram"><img src="images/instagram.svg" alt="Instagram icon"></a>
             <a href="https://linkedin.com" aria-label="LinkedIn"><img src="images/linkedin.svg" alt="LinkedIn icon"></a>

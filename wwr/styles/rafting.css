@@ -197,6 +197,113 @@ footer p {
     line-height: 1.7;
 }
 
+.contact-page { padding-bottom: 2rem; }
+
+.contact-intro {
+    padding: 3rem 2rem 2rem;
+    text-align: center;
+    background: linear-gradient(135deg, #eaf6fb, #ffffff);
+    border-bottom: 1px solid #d0e5eb;
+}
+
+.contact-intro h1 {
+    margin: 0.35rem 0 0.75rem;
+    color: var(--primary-color);
+    font-size: clamp(2.2rem, 6vw, 3.5rem);
+}
+
+.contact-intro > p:last-child {
+    max-width: 650px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+.contact-kicker {
+    color: #07586a;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.12rem;
+}
+
+.contact-details {
+    display: grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 1.5rem;
+    align-items: stretch;
+    padding: 2rem;
+}
+
+.company-details {
+    padding: 1.5rem;
+    background-color: #eff8fb;
+    border-left: 6px solid var(--secondary-color);
+}
+
+.company-details h2,
+.employees h2,
+.inquiry h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.company-details address {
+    font-style: normal;
+    line-height: 1.8;
+}
+
+.company-details p { margin-top: 1rem; line-height: 1.5; }
+
+.contact-map {
+    width: 100%;
+    min-height: 290px;
+    border: 1px solid #a9c8d1;
+}
+
+.employees { padding: 1rem 2rem 2.5rem; }
+.employees > h2 { text-align: center; }
+.employee-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
+.employee-grid figure { overflow: hidden; background: #eff8fb; border: 1px solid #d0e5eb; border-radius: 0.75rem; }
+.employee-grid img { display: block; width: 100%; aspect-ratio: 1 / 1; object-fit: cover; }
+.employee-one { object-position: left center; }
+.employee-two { object-position: center center; }
+.employee-three { object-position: right center; }
+.employee-grid figcaption { display: grid; gap: 0.25rem; padding: 0.9rem; color: var(--primary-color); text-align: center; }
+.employee-grid figcaption span { color: var(--text-dark); font-size: 0.85rem; }
+
+.inquiry {
+    display: grid;
+    grid-template-columns: 0.75fr 1.25fr;
+    gap: 2rem;
+    margin: 0 2rem;
+    padding: 2rem;
+    background: var(--primary-color);
+    color: var(--accent2-color);
+}
+
+.inquiry-heading p { line-height: 1.6; }
+.inquiry .contact-kicker { color: var(--secondary-color); }
+.inquiry h2 { color: white; font-size: 2rem; }
+.inquiry form { display: grid; gap: 0.65rem; }
+.inquiry label, .inquiry legend { font-weight: 700; }
+.inquiry input[type="text"],
+.inquiry input[type="email"],
+.inquiry textarea {
+    width: 100%;
+    padding: 0.75rem;
+    color: var(--text-dark);
+    background: white;
+    border: 2px solid transparent;
+    border-radius: 0.35rem;
+}
+
+.inquiry input:focus,
+.inquiry textarea:focus { border-color: var(--secondary-color); outline: none; }
+.inquiry fieldset { display: grid; gap: 0.6rem; margin: 0.4rem 0; padding: 1rem; border: 1px solid #aac3d7; }
+.inquiry fieldset label, .newsletter { display: flex; gap: 0.6rem; align-items: center; font-weight: 400; }
+.inquiry input[type="radio"], .inquiry input[type="checkbox"] { width: 1.15rem; height: 1.15rem; accent-color: var(--secondary-color); }
+.inquiry button { justify-self: start; margin-top: 0.5rem; padding: 0.85rem 1.4rem; color: var(--primary-color); background: var(--secondary-color); border: 0; border-radius: 0.35rem; font-weight: 700; cursor: pointer; }
+.inquiry button:hover, .inquiry button:focus-visible { background: white; outline: 3px solid var(--secondary-color); outline-offset: 3px; }
+
 .adventure-gallery {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -276,6 +383,9 @@ footer {
         grid-template-columns: 1fr;
     }
 
+    .contact-details,
+    .inquiry { grid-template-columns: 1fr; }
+
     .adventure-gallery {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -300,4 +410,14 @@ footer {
     .adventure-gallery {
         grid-template-columns: 1fr;
     }
+
+    .contact-intro,
+    .contact-details,
+    .employees { padding-left: 1rem; padding-right: 1rem; }
+
+    .employee-grid { grid-template-columns: 1fr; }
+
+    .employee-grid figure { max-width: 340px; margin: 0 auto; }
+
+    .inquiry { margin: 0 1rem; padding: 1.25rem; }
 }
