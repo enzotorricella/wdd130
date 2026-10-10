@@ -3,32 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Preview upcoming Summit Surge Rafting trip options and packages.">
+    <meta name="description" content="Compare Summit Surge Rafting trips, from a relaxed half-day introduction to technical full-day whitewater adventures with professional guides.">
     <meta name="author" content="Enzo Torricella">
-    <title>Summit Surge Rafting | Trips</title>
+    <title>Rafting Trips | Summit Surge Rafting</title>
+    <link rel="icon" href="images/logo.svg" type="image/svg+xml">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 <body>
     <header>
         <img src="images/logo.svg" alt="Summit Surge Rafting logo">
-        <nav>
+        <nav aria-label="Primary navigation">
             <ul class="navigation">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
-                <li><a href="trips.html">Trips</a></li>
+                <li><a href="trips.html" aria-current="page">Trips</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
     </header>
-    <main class="placeholder-page">
-        <section>
-            <h1>Trips Coming Soon</h1>
-            <p>Our detailed trip listings are coming soon. Explore the <a href="about.html">adventure gallery</a> for a look at whitewater rafting with Summit Surge.</p>
+    <main class="trips-page">
+        <section class="trips-heading">
+            <p class="section-number">THREE WAYS TO MEET THE RIVER</p>
+            <h1>Choose your current.</h1>
+            <p>Every trip includes a trained guide, safety briefing, rafting equipment, and transportation from our river base.</p>
+            <a class="button-link" href="contact.html">Ask About Availability</a>
+        </section>
+        <section class="trip-list" aria-labelledby="trip-list-title">
+            <h2 id="trip-list-title" class="visually-hidden">Featured rafting trips</h2>
+            <article class="trip-card">
+                <img src="images/adventure-half-day.jpg" alt="A small raft floating through a mountain valley" width="320" height="320">
+                <div><p class="section-number">01 / BEGINNER · HALF DAY</p><h2>Valley Discovery</h2><p>A welcoming introduction to rafting with calm stretches, playful Class II rapids, and time to enjoy the landscape. Ideal for families and first-time paddlers.</p><ul><li>Approximately 4 hours</li><li>Ages 8 and older</li><li>Snack and dry bag included</li></ul></div>
+            </article>
+            <article class="trip-card trip-card-reverse">
+                <img src="images/adventure-big-mallard.jpg" alt="Rafting crew splashing through a powerful river wave" width="320" height="320">
+                <div><p class="section-number">02 / INTERMEDIATE · FULL DAY</p><h2>Big Mallard Run</h2><p>A full river day that balances scenic water with exciting Class III rapids. Crews practice precise paddling and work together through longer wave trains.</p><ul><li>Approximately 7 hours</li><li>Ages 12 and older</li><li>Riverside lunch included</li></ul></div>
+            </article>
+            <article class="trip-card">
+                <img src="images/adventure-canyon-blast.jpg" alt="Two paddlers entering whitewater in a rocky canyon" width="320" height="320">
+                <div><p class="section-number">03 / ADVANCED · FULL DAY</p><h2>Canyon Blast</h2><p>Steeper lines, technical Class IV water, and a narrow canyon make this our most demanding trip. Previous rafting experience and confident swimming are required.</p><ul><li>Approximately 8 hours</li><li>Ages 16 and older</li><li>Lunch and wetsuit included</li></ul></div>
+            </article>
+        </section>
+        <section class="trip-table-section" aria-labelledby="compare-title">
+            <p class="section-number">AT A GLANCE</p>
+            <h2 id="compare-title">Compare the trips</h2>
+            <section class="table-scroll" tabindex="0" aria-label="Rafting trip comparison table">
+                <table>
+                    <thead><tr><th scope="col">Trip</th><th scope="col">Level</th><th scope="col">Duration</th><th scope="col">Minimum age</th><th scope="col">From</th></tr></thead>
+                    <tbody>
+                        <tr><th scope="row">Valley Discovery</th><td>Beginner</td><td>4 hours</td><td>8</td><td>US$75</td></tr>
+                        <tr><th scope="row">Big Mallard Run</th><td>Intermediate</td><td>7 hours</td><td>12</td><td>US$125</td></tr>
+                        <tr><th scope="row">Canyon Blast</th><td>Advanced</td><td>8 hours</td><td>16</td><td>US$165</td></tr>
+                    </tbody>
+                </table>
+            </section>
+            <p class="table-note">Sample prices are per person. River levels and weather may affect routes and departure times.</p>
+        </section>
+        <section class="trip-cta">
+            <p class="section-number">READY TO PADDLE?</p>
+            <h2>Tell us what kind of day you want.</h2>
+            <p>Our team will help you select the route that matches your group’s ages, experience, and appetite for adventure.</p>
+            <a class="button-link" href="contact.html">Plan Your River Day</a>
         </section>
     </main>
     <footer>
         <p>&copy;2026 Summit Surge Rafting | Enzo Torricella</p>
-        <nav class="socialmedia">
+        <nav class="socialmedia" aria-label="Social media">
             <a href="https://facebook.com" aria-label="Facebook"><img src="images/facebook.svg" alt="Facebook icon"></a>
             <a href="https://instagram.com" aria-label="Instagram"><img src="images/instagram.svg" alt="Instagram icon"></a>
             <a href="https://linkedin.com" aria-label="LinkedIn"><img src="images/linkedin.svg" alt="LinkedIn icon"></a>

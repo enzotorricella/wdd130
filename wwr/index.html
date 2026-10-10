@@ -3,32 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Welcome to Summit Surge Rafting and explore our river adventures.">
+    <meta name="description" content="Plan a guided whitewater rafting adventure with Summit Surge Rafting. Explore river trips for families, first-time paddlers, and experienced crews.">
     <meta name="author" content="Enzo Torricella">
-    <title>Summit Surge Rafting | Home</title>
+    <title>Summit Surge Rafting | Guided River Adventures</title>
+    <link rel="icon" href="images/logo.svg" type="image/svg+xml">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 <body>
     <header>
         <img src="images/logo.svg" alt="Summit Surge Rafting logo">
-        <nav>
+        <nav aria-label="Primary navigation">
             <ul class="navigation">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" aria-current="page">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="trips.html">Trips</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
     </header>
-    <main class="placeholder-page">
-        <section>
-            <h1>Welcome to Summit Surge Rafting</h1>
-            <p>Discover guided river adventures with Summit Surge Rafting. Meet our team through <a href="about.html">our story and mission</a>, and explore the rafting experiences that inspire us.</p>
+    <main class="home-page">
+        <section class="home-hero">
+            <img src="images/hero-rafting.jpg" alt="Rafting crews enjoying a wide tropical river" width="840" height="560">
+            <div class="home-hero-copy">
+                <p class="home-kicker">GUIDED RIVER ADVENTURES</p>
+                <h1>Find your line.<br>Follow the river.</h1>
+                <p>Expert guides, clear preparation, and memorable days on the water.</p>
+                <a class="button-link" href="trips.html">Choose Your Trip</a>
+            </div>
+        </section>
+        <section class="home-intro" aria-labelledby="home-intro-title">
+            <p class="section-number">01 / WHY SUMMIT SURGE</p>
+            <div>
+                <h2 id="home-intro-title">Adventure that meets you where you are.</h2>
+                <p>Whether you are holding a paddle for the first time or looking for your next rapid, our guides help you choose the right route and arrive prepared.</p>
+            </div>
+        </section>
+        <section class="home-features" aria-label="Our rafting experiences">
+            <article>
+                <img src="images/adventure-half-day.jpg" alt="Small raft traveling through a mountain river valley" width="320" height="320">
+                <p class="section-number">FOR NEW PADDLERS</p>
+                <h2>Start with confidence</h2>
+                <p>Learn the basic commands, practice as a team, and enjoy a scenic route with approachable rapids.</p>
+            </article>
+            <article>
+                <img src="images/adventure-rapid-rush.jpg" alt="Rafting team paddling through a strong whitewater rapid" width="320" height="320">
+                <p class="section-number">FOR BOLD CREWS</p>
+                <h2>Chase bigger water</h2>
+                <p>Take on technical lines and powerful waves with experienced guides leading every stage of the run.</p>
+            </article>
+        </section>
+        <section class="newsletter" aria-labelledby="newsletter-title">
+            <div>
+                <p class="section-number">RIVER NOTES</p>
+                <h2 id="newsletter-title">Get trip ideas in your inbox.</h2>
+                <p>Monthly river stories, preparation tips, and new departure dates.</p>
+            </div>
+            <form action="#" method="post">
+                <label for="newsletter-name">Name</label>
+                <input type="text" id="newsletter-name" name="name" autocomplete="name" required>
+                <label for="newsletter-email">Email</label>
+                <input type="email" id="newsletter-email" name="email" autocomplete="email" required>
+                <button type="submit">Join River Notes</button>
+            </form>
         </section>
     </main>
     <footer>
         <p>&copy;2026 Summit Surge Rafting | Enzo Torricella</p>
-        <nav class="socialmedia">
+        <nav class="socialmedia" aria-label="Social media">
             <a href="https://facebook.com" aria-label="Facebook"><img src="images/facebook.svg" alt="Facebook icon"></a>
             <a href="https://instagram.com" aria-label="Instagram"><img src="images/instagram.svg" alt="Instagram icon"></a>
             <a href="https://linkedin.com" aria-label="LinkedIn"><img src="images/linkedin.svg" alt="LinkedIn icon"></a>

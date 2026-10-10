@@ -70,6 +70,12 @@ nav {
     outline: none;
 }
 
+.navigation a[aria-current="page"] {
+    color: var(--secondary-color);
+    text-decoration: underline;
+    text-underline-offset: 0.4rem;
+}
+
 main {
     background-color: var(--surface-color);
     box-shadow: 0 14px 35px rgba(13, 59, 102, 0.12);
@@ -197,6 +203,64 @@ footer p {
     line-height: 1.7;
 }
 
+.home-page,
+.trips-page { overflow: hidden; }
+
+.home-hero { position: relative; min-height: 540px; padding: 0; background-color: var(--primary-color); }
+.home-hero > img { display: block; width: 100%; height: 540px; object-fit: cover; opacity: 0.68; }
+.home-hero-copy { position: absolute; left: 2.5rem; bottom: 2.5rem; max-width: 570px; color: white; }
+.home-kicker,
+.section-number { color: #07586a; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12rem; }
+.home-hero-copy .home-kicker { color: var(--secondary-color); }
+.home-hero-copy h1 { margin: 0.55rem 0 0.75rem; font-size: clamp(3rem, 8vw, 5.4rem); line-height: 0.96; letter-spacing: -0.16rem; }
+.home-hero-copy > p:not(.home-kicker) { max-width: 450px; margin-bottom: 1.5rem; font-size: 1.08rem; line-height: 1.5; }
+.button-link { display: inline-block; padding: 0.85rem 1.25rem; color: var(--primary-color); background-color: var(--secondary-color); border: 2px solid var(--secondary-color); border-radius: 0.25rem; text-decoration: none; font-weight: 700; }
+.button-link:hover,
+.button-link:focus-visible { color: white; background-color: var(--primary-color); outline: 3px solid white; outline-offset: 3px; }
+.home-intro { display: grid; grid-template-columns: 0.65fr 2fr; gap: 2rem; align-items: start; padding: 3.5rem 2rem; }
+.home-intro h2,
+.newsletter h2,
+.trip-table-section h2,
+.trip-cta h2 { margin-bottom: 0.85rem; color: var(--primary-color); font-size: clamp(2rem, 5vw, 3rem); line-height: 1.1; }
+.home-intro p:last-child { max-width: 570px; line-height: 1.7; }
+.home-features { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; padding: 0; background-color: #bed4da; }
+.home-features article { padding: 1.5rem; background-color: white; }
+.home-features img { display: block; width: 100%; aspect-ratio: 4 / 3; margin-bottom: 1.25rem; object-fit: cover; }
+.home-features h2 { margin: 0.35rem 0 0.65rem; color: var(--primary-color); }
+.home-features article > p:last-child { line-height: 1.65; }
+.newsletter { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 2rem; align-items: center; padding: 3rem 2rem; color: white; background-color: var(--primary-color); }
+.newsletter .section-number { color: var(--secondary-color); }
+.newsletter h2 { color: white; }
+.newsletter form { display: grid; grid-template-columns: 1fr 1fr; gap: 0.65rem 1rem; }
+.newsletter label { font-weight: 700; }
+.newsletter input { width: 100%; padding: 0.75rem; color: var(--text-dark); background-color: white; border: 2px solid transparent; border-radius: 0.25rem; }
+.newsletter input:focus { border-color: var(--secondary-color); outline: none; }
+.newsletter button { grid-column: 1 / -1; justify-self: start; margin-top: 0.5rem; padding: 0.85rem 1.25rem; color: var(--primary-color); background-color: var(--secondary-color); border: 0; border-radius: 0.25rem; font-weight: 700; cursor: pointer; }
+.newsletter button:hover,
+.newsletter button:focus-visible { background-color: white; outline: 3px solid var(--secondary-color); outline-offset: 3px; }
+.trips-heading { padding: 4rem 2rem 3rem; color: white; background-color: var(--primary-color); }
+.trips-heading .section-number { color: var(--secondary-color); }
+.trips-heading h1 { margin: 0.4rem 0 1rem; font-size: clamp(3rem, 8vw, 5rem); line-height: 1; }
+.trips-heading > p:not(.section-number) { max-width: 580px; margin-bottom: 1.5rem; line-height: 1.7; }
+.trip-list { padding: 2rem; }
+.trip-card { display: grid; grid-template-columns: minmax(230px, 0.85fr) 1.15fr; gap: 2rem; align-items: center; padding: 2rem 0; border-bottom: 1px solid #c7d9df; }
+.trip-card-reverse img { grid-column: 2; grid-row: 1; }
+.trip-card-reverse div { grid-column: 1; grid-row: 1; }
+.trip-card img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+.trip-card h2 { margin: 0.45rem 0 0.75rem; color: var(--primary-color); font-size: 2rem; }
+.trip-card p:not(.section-number) { line-height: 1.65; }
+.trip-card ul { display: grid; gap: 0.4rem; margin: 1rem 0 0 1.2rem; }
+.trip-table-section { padding: 3rem 2rem; background-color: #eff8fb; }
+.table-scroll { overflow-x: auto; margin-top: 1.5rem; }
+table { width: 100%; min-width: 610px; border-collapse: collapse; background-color: white; }
+th,
+td { padding: 0.95rem; border-bottom: 1px solid #c7d9df; text-align: left; }
+thead th { color: white; background-color: var(--primary-color); }
+tbody tr:nth-child(even) { background-color: #f7fbfc; }
+.table-note { margin-top: 0.8rem; font-size: 0.82rem; }
+.trip-cta { padding: 3.5rem 2rem; text-align: center; }
+.trip-cta p:not(.section-number) { max-width: 590px; margin: 0 auto 1.5rem; line-height: 1.65; }
+
 .contact-page { padding-bottom: 2rem; }
 
 .contact-intro {
@@ -306,7 +370,7 @@ footer p {
 .inquiry input:focus,
 .inquiry textarea:focus { border-color: var(--secondary-color); outline: none; }
 .inquiry fieldset { display: grid; gap: 0.6rem; margin: 0.4rem 0; padding: 1rem; border: 1px solid #aac3d7; }
-.inquiry fieldset label, .newsletter { display: flex; gap: 0.6rem; align-items: center; font-weight: 400; }
+.inquiry fieldset label, .inquiry .newsletter { display: flex; gap: 0.6rem; align-items: center; font-weight: 400; }
 .inquiry input[type="radio"], .inquiry input[type="checkbox"] { width: 1.15rem; height: 1.15rem; accent-color: var(--secondary-color); }
 .inquiry button { justify-self: start; margin-top: 0.5rem; padding: 0.85rem 1.4rem; color: var(--primary-color); background: var(--secondary-color); border: 0; border-radius: 0.35rem; font-weight: 700; cursor: pointer; }
 .inquiry button:hover, .inquiry button:focus-visible { background: white; outline: 3px solid var(--secondary-color); outline-offset: 3px; }
@@ -391,7 +455,17 @@ footer {
     }
 
     .contact-details,
-    .inquiry { grid-template-columns: 1fr; }
+    .inquiry,
+    .home-intro,
+    .newsletter { grid-template-columns: 1fr; }
+
+    .home-features { grid-template-columns: 1fr; }
+
+    .trip-card,
+    .trip-card-reverse { grid-template-columns: 1fr; }
+
+    .trip-card-reverse img,
+    .trip-card-reverse div { grid-column: 1; grid-row: auto; }
 
     .adventure-gallery {
         grid-template-columns: repeat(2, 1fr);
@@ -427,4 +501,22 @@ footer {
     .employee-grid figure { max-width: 340px; margin: 0 auto; }
 
     .inquiry { margin: 0 1rem; padding: 1.25rem; }
+
+    .home-hero,
+    .home-hero > img { min-height: 600px; height: 600px; }
+
+    .home-hero-copy { left: 1.25rem; right: 1.25rem; bottom: 1.5rem; }
+
+    .home-hero-copy h1 { letter-spacing: -0.08rem; }
+
+    .home-intro,
+    .newsletter,
+    .trips-heading,
+    .trip-list,
+    .trip-table-section,
+    .trip-cta { padding-left: 1rem; padding-right: 1rem; }
+
+    .newsletter form { grid-template-columns: 1fr; }
+
+    .newsletter button { grid-column: 1; }
 }
